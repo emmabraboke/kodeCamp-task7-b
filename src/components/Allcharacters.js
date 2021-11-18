@@ -17,7 +17,7 @@ const Allcharacters = ({characters,friends,handleRemoveCharacter, removecharacte
               {characters.map((character)=><Col className="mb-4" lg={4} md={6}>
                 <div className="h-100" style={{borderRadius:"30px", overflow:"hidden", border:character.id===cborders.id?"2px solid #121C33":"none"}}>
                         <Card onClick={()=>handleRemoveCharacter(true, character.id, character.description, character.name)} className="fluid mr-0 pr-0 h-100" >
-                        <Card.Img className="planet border-0" alt="no image" variant="" src={character.image} />
+                        <Card.Img className="planet border-0 w-100" alt="no image" variant="" src={character.image}  />
                         <Card.Body className="card-body">
                         <Card.Text >
                         <Row>

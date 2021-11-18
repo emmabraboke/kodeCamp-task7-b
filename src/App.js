@@ -393,7 +393,7 @@ function App(){
         </Route>
         
         <Route>
-        <Space  />
+        <Space exact path="/component/Space" />
         </Route>
     
       </Switch>

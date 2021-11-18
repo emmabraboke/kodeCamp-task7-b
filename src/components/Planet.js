@@ -18,7 +18,7 @@ const Planet = ({planets,handleRemovePlanet,removePlanet,borders}) => {
              {planets.map((planet)=><Col className="mb-4 " md={6} lg={removePlanet ? 4:3 }>
                 <div className="h-100" key={planet.id} onClick={(e)=>handleRemovePlanet(true,planet.id,planet.name)} style={{borderRadius:"30px", overflow:"hidden", border: planet.id===borders.id ?" 2px solid #121C33" : null}}>
                         <Card onClick={(e)=>handleRemovePlanet(true,e)} className="fluid mr-0 pr-0 h-100" style={{border:"none"}}>
-                        <Card.Img className="planet" variant="" src={planet.image} alt="no image" style={{border:"none"}} />
+                        <Card.Img className="planet w-100" variant="" src={planet.image} alt="no image" style={{border:"none"}} />
                         <Card.Body className="card-body">
                         <Card.Text >
                         <Row>
