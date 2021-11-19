@@ -2,7 +2,9 @@ import planetLoader from  "../images/assets/planetLoader.svg"
 import {Container,Col,Row,Card, Button} from 'react-bootstrap';
 import Spacious from "./Spacious";
 import plusCircle from '../images/plusCircle.svg';
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router';
+
+import {BrowserRouter as Router,Route,Switch,Link} from 'react-router-dom';
 
 
 const Space = ({ change, handleChange}) => {

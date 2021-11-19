@@ -10,7 +10,7 @@ import Friends from './components/Friends';
 import PlanetForm from './components/PlanetForm';
 import CharacterForm from './components/CharacterForm';
 import Load from './components/Load';
-import {BrowserRouter as Router,Route,Switch, useLocation} from 'react-router-dom';
+import {HashRouter as Router,Route,Switch, useLocation} from 'react-router-dom';
 
 
 
@@ -393,7 +393,7 @@ function App(){
         </Route>
         
         <Route>
-        <Space exact path="/component/Space" />
+        <Space  />
         </Route>
     
       </Switch>

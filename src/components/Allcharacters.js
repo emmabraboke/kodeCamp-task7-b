@@ -11,10 +11,10 @@ const Allcharacters = ({characters,friends,handleRemoveCharacter, removecharacte
   return (
             <>
       <Row>  
-        <Col md={removecharacter ? 8 :10}>
+        <Col md={removecharacter ? 7 : 12}  lg={removecharacter ? 8 : 12} >
               <Row>
               <Spacious />
-              {characters.map((character)=><Col className="mb-4" lg={4} md={6}>
+              {!removecharacter?<>{characters.map((character)=><Col className="mb-4"  md={6} lg={4} >
                 <div className="h-100" style={{borderRadius:"30px", overflow:"hidden", border:character.id===cborders.id?"2px solid #121C33":"none"}}>
                         <Card onClick={()=>handleRemoveCharacter(true, character.id, character.description, character.name)} className="fluid mr-0 pr-0 h-100" >
                         <Card.Img className="planet border-0 w-100" alt="no image" variant="" src={character.image}  />
@@ -35,10 +35,31 @@ const Allcharacters = ({characters,friends,handleRemoveCharacter, removecharacte
                       </Card.Body>
                       </Card>
                 </div>
-              </Col>)}
+              </Col>)}</>:<>{characters.map((character)=><Col className="mb-4 d-none d-md-block" md={removecharacter ? 6:6} lg={removecharacter ? 4:3}>
+                <div className="h-100" style={{borderRadius:"30px", overflow:"hidden", border:character.id===cborders.id?"2px solid #121C33":"none"}}>
+                        <Card onClick={()=>handleRemoveCharacter(true, character.id, character.description, character.name)} className="fluid mr-0 pr-0 h-100" >
+                        <Card.Img className="planet border-0 w-100" alt="no image" variant="" src={character.image}  />
+                        <Card.Body className="card-body">
+                        <Card.Text >
+                        <Row>
+                            <Col className="mt-1">
+                            <p className="fw-bold"><small>{character.name}</small></p>
+                            <p style={{opacity: "0.6"}}><small>{character.friends}</small></p>
+                            </Col>
+                           { character.id== characters.length ? (<Col className="d-flex justify-content-end align-content-start">
+                               <Link to="/component/CharacterForm"> <img src={plusCircle} style={{ width: "56px", height:"56px", size: "32px"}} /></Link>
+                            </Col>): ""}
+                            
+                        </Row>
+                        
+                       </Card.Text>
+                      </Card.Body>
+                      </Card>
+                </div>
+              </Col>)}</>}
               </Row>
               </Col>
-              <Col md={4}>
+              <Col  md={5} sm={12} lg={4}>
             {removecharacter?<Friends friends={friends} cborders={cborders} handleRemoveCharacter={handleRemoveCharacter}/>:null }
         </Col> 
               </Row>

@@ -1,12 +1,17 @@
 import { useState } from 'react';
 import {Container,Col,Row,Card,Form} from 'react-bootstrap';
 import { Link,useLocation } from 'react-router-dom';
+import { useHistory } from 'react-router';
 const Spacious = () => {
 
     const spaces="/component/Space"
     const character="/component/Allcharacter"
     const planet="/component/Planet"
-    const path =window.location.pathname;
+    const history =useHistory()
+    const path =history.location.pathname;
+   
+
+
     
 
     return (
