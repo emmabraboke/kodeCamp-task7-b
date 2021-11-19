@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/kodeCamp-task7-b/static/css/main.e1f3f7d0.chunk.css",
-    "main.js": "/kodeCamp-task7-b/static/js/main.82061484.chunk.js",
-    "main.js.map": "/kodeCamp-task7-b/static/js/main.82061484.chunk.js.map",
+    "main.css": "/kodeCamp-task7-b/static/css/main.5a1ee197.chunk.css",
+    "main.js": "/kodeCamp-task7-b/static/js/main.f1e64521.chunk.js",
+    "main.js.map": "/kodeCamp-task7-b/static/js/main.f1e64521.chunk.js.map",
     "runtime-main.js": "/kodeCamp-task7-b/static/js/runtime-main.c1204968.js",
     "runtime-main.js.map": "/kodeCamp-task7-b/static/js/runtime-main.c1204968.js.map",
     "static/css/2.0a9ec390.chunk.css": "/kodeCamp-task7-b/static/css/2.0a9ec390.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.5c1c995a.chunk.js.map": "/kodeCamp-task7-b/static/js/3.5c1c995a.chunk.js.map",
     "index.html": "/kodeCamp-task7-b/index.html",
     "static/css/2.0a9ec390.chunk.css.map": "/kodeCamp-task7-b/static/css/2.0a9ec390.chunk.css.map",
-    "static/css/main.e1f3f7d0.chunk.css.map": "/kodeCamp-task7-b/static/css/main.e1f3f7d0.chunk.css.map",
+    "static/css/main.5a1ee197.chunk.css.map": "/kodeCamp-task7-b/static/css/main.5a1ee197.chunk.css.map",
     "static/js/2.c297f990.chunk.js.LICENSE.txt": "/kodeCamp-task7-b/static/js/2.c297f990.chunk.js.LICENSE.txt",
     "static/media/cancel.4f097d65.svg": "/kodeCamp-task7-b/static/media/cancel.4f097d65.svg",
     "static/media/character1.b8cf9c50.png": "/kodeCamp-task7-b/static/media/character1.b8cf9c50.png",
@@ -48,7 +48,7 @@
     "static/js/runtime-main.c1204968.js",
     "static/css/2.0a9ec390.chunk.css",
     "static/js/2.c297f990.chunk.js",
-    "static/css/main.e1f3f7d0.chunk.css",
-    "static/js/main.82061484.chunk.js"
+    "static/css/main.5a1ee197.chunk.css",
+    "static/js/main.f1e64521.chunk.js"
   ]
 }
