@@ -322,7 +322,7 @@ function App(){
     },
     {
         name: "Brookly Simmons",
-        body: "23 friends",
+        body: "Amer minim non deserunt ullmco e",
         image: character16,
         id: 2
     },

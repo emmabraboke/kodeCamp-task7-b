@@ -15,8 +15,8 @@ const Allcharacters = ({characters,friends,handleRemoveCharacter, removecharacte
               <Row>
               <Spacious />
               {!removecharacter?<>{characters.map((character)=><Col className="mb-4"  md={6} lg={4} >
-                <div className="h-100" style={{borderRadius:"30px", overflow:"hidden", border:character.id===cborders.id?"2px solid #121C33":"none"}}>
-                        <Card onClick={()=>handleRemoveCharacter(true, character.id, character.description, character.name)} className="fluid mr-0 pr-0 h-100" >
+                <div className="sidebar h-100" style={{borderRadius:"30px", overflow:"hidden", border:character.id===cborders.id?"2px solid #121C33":"none"}}>
+                        <Card onClick={()=>handleRemoveCharacter(true, character.id, character.description, character.name)} className="fluid mr-0  pr-0 h-100" >
                         <Card.Img className="planet border-0 w-100" alt="no image" variant="" src={character.image}  />
                         <Card.Body className="card-body">
                         <Card.Text >
@@ -35,8 +35,8 @@ const Allcharacters = ({characters,friends,handleRemoveCharacter, removecharacte
                       </Card.Body>
                       </Card>
                 </div>
-              </Col>)}</>:<>{characters.map((character)=><Col className="mb-4 d-none d-md-block" md={removecharacter ? 6:6} lg={removecharacter ? 4:3}>
-                <div className="h-100" style={{borderRadius:"30px", overflow:"hidden", border:character.id===cborders.id?"2px solid #121C33":"none"}}>
+              </Col>)}</>:<>{characters.map((character)=><Col className="mb-4 d-none d-md-block " md={removecharacter ? 6:6} lg={removecharacter ? 4:3}>
+                <div className="h-100 sidebar" style={{borderRadius:"30px", overflow:"hidden", border:character.id===cborders.id?"2px solid #121C33":"none"}}>
                         <Card onClick={()=>handleRemoveCharacter(true, character.id, character.description, character.name)} className="fluid mr-0 pr-0 h-100" >
                         <Card.Img className="planet border-0 w-100" alt="no image" variant="" src={character.image}  />
                         <Card.Body className="card-body">

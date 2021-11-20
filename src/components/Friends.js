@@ -3,7 +3,7 @@ import cancel from '../images/cancel.svg'
 const Friends = ({friends,handleRemoveCharacter,cborders}) => {
     return (
         <>
-            <div className="h-100" style={{borderRadius:"30px", overflow:"hidden"}}>
+            <div className="h-100  sidebar" style={{borderRadius:"30px", overflow:"hidden"}}>
                 <Card className="h-100 pt-2" style={{border:"none"}}>
                     <Container>
                         <Card.Img className="" variant="" src=""/>
